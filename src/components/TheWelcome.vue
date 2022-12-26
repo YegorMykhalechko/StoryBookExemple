@@ -5,9 +5,16 @@ import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
+import Button from '../stories/Button.vue'
+
+const test = () => {
+  console.log('test')
+}
 </script>
 
 <template>
+  <Button label="Button" primary size="medium" @click="test">Test</Button>
+
   <WelcomeItem>
     <template #icon>
       <DocumentationIcon />
